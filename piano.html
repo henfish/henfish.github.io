@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fretless Piano</title>
+    <link rel="icon" type="image/x-icon" href="Screen Shot 2022-10-13 at 2.10.18 PM.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="Tone.js"></script>
+    
+    <style>
+        * {
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            font-family: "SF Display", "Arial";
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            height:100%;
+            text-align: center;
+            
+        }
+        body {
+            background: rgb(58, 58, 58);
+            color: white;
+        }
+        p{
+            text-align: center;
+            font-size: large;
+        }
+        button{
+            left: 50%;
+            color: white;
+            padding: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: large; 
+            background-color: rgb(79, 79, 79);
+        }
+        #piano {
+            display: inline-block;
+            width: 176.5%; /* note: this is just 3/1.7 (its a 3 octave keyboard, and we set it to be  octaves per screen)*/
+            height: 87%;
+            background-color: white;
+            /*background-image: linear-gradient(to right, rgb(255, 124, 124) , rgb(255, 255, 135));*/
+            /*background-image: url(Blossom-and-Bird-wallpaper-grey-swatch-syson__22666.jpeg);*/
+        }
+        table{
+            empty-cells: show;
+            border-collapse: collapse;
+            width:100%;
+        }
+        #semitone{
+            
+            height: 3%;
+        }
+        #semitone td:nth-child(12n + 1), #semitone td:nth-child(12n + 3), #semitone td:nth-child(12n + 6),#semitone td:nth-child(12n + 8),#semitone td:nth-child(12n + 10){
+            border: 3px solid rgb(58, 58, 58);
+        }
+        #semitone td{
+            border: 3px solid rgb(218, 218, 218);
+        }
+        #semitone td{
+            
+            border-bottom: none !important;
+            border-top: none !important;
+        }
+        
+        .octave td:nth-child(2n + 1){
+            border: 3px solid rgb(58, 58, 58);
+        }
+        .octave{
+            height: 100%;
+        }
+        .octave td{
+            border: 3px solid rgb(218, 218, 218);
+            border-bottom: none !important;
+            border-top: none !important;
+        }
+
+        .hide{
+            display:none;
+        }
+
+        #freq{
+            position:absolute;
+            top: 17%;
+            background-color:rgb(79, 79, 79);
+            border:rgb(79, 79, 79);
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .header{
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        .white{
+            color: white;
+            background: none;
+        }
+        .grey{
+            color:grey;
+            background: none;
+    }
+        
+        
+    </style>
+    
+</head>
+
+<body>
+    <!--<div id = container>
+        <canvas height="40" width="310"></canvas>
+        </div>-->
+    <h1 class = "header">
+        <mark class="white">F</mark><mark class="grey">r</mark><mark class="white">e</mark><mark class="grey">t</mark><mark class="white">le</mark><mark class="grey">s</mark><mark class="white">s</mark>
+        <mark class="grey">P</mark><mark class="white">i</mark><mark class="grey">a</mark><mark class="white">no</mark>
+    </h1>
+
+
+    <h2 class = "header">By Henry Fisher</h2>
+    <p class = "header"> A piano has a repeating pattern of 12 keys: 5 black and 7 white. 
+        Those keys are represented by the black and grey "frets" at the top of the white strip. But what 
+        would happen if we could play in between the keys?</p>
+    <p class = "header"> Although the notes on the piano are physically equally spaced,
+        their frequencies are not equally spaced. They are spaced logarithmically, with a note's frequency being a constant multiple of the previous note's.</p>
+        <p class = "header">  Click <b>"enable audio"</b>  and then click on the white strip to play a note. 
+            The number hovering above where you click is the frequency ratio (in hz) to the closest C below your note. 
+         The vertical lines are guidelines: the grey lines represent octaves above C (a 2:1 ratio) and the black lines represent 
+         tritones above C (a 1.41:1 ratio, or exactly half of an octave). <p>
+    <button id = "start">Enable Audio</button>  <button id = "grid">Grid</button>
+    <p id="demo">Zoom : 1</p>
+    <div class="slidecontainer">
+        <input type="range" min="0.57" max="4" value="1" step ="0.01" class="slider" id="zoom">
+      </div>
+    <p id="freq" class="hide"></p>
+    
+
+ 
+      </table>
+    <div id="piano">
+        <table id = semitone>
+        
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
+        </table>
+        <table class = octave>
+        
+            <td></td><td></td><td></td>
+            <td></td><td></td><td></td>
+        </table>
+    </div>
+</body>
+
+<script>
+    
+    
+    //checks if audio is ready
+    document.getElementById("start").addEventListener('click', async () => {
+        await Tone.start()
+        console.log('audio is ready')
+    })
+
+    //hides the semitone markers on the click of a button
+    semitoneTable = document.getElementById("semitone")
+    document.getElementById("grid").addEventListener('click', async () => {
+        if (semitoneTable.classList.contains("hide")){
+            semitoneTable.classList.remove("hide");
+        }
+        else{
+            semitoneTable.classList.add("hide");
+        }
+    })
+
+    const piano = document.getElementById("piano");
+    
+    //sets zoom value and updates it
+    var zoom = document.getElementById("zoom");
+    var output = document.getElementById("demo");
+    output.innerHTML = "Zoom: " + zoom.value; // Display the default slider value
+    var zoomFactor = zoom.value;
+    // Update the current slider value (each time you drag the slider handle)
+    zoom.oninput = function() {
+        output.innerHTML = "Zoom: " + this.value;
+        zoomFactor = this.value;
+        piano.setAttribute("style","width:" + zoomFactor * 176.5 + "%");
+        mapNotes();
+    }
+
+    //setting up the synth
+    const synth = new Tone.Synth().toDestination();
+    notePlaying = false;
+    const toneFFT = new Tone.FFT();
+    synth.connect(toneFFT);
+    //meter({
+    //    parent: document.querySelector("#content"),
+    //    tone: toneFFT,
+    //});
+
+    //checks if mouse is over the keyboard
+    
+    var mouseIsOver = false;
+    piano.onmouseover = function()   {
+        mouseIsOver = true;
+    };
+    piano.onmouseout = function()   {
+        mouseIsOver = false;
+    }
+
+    var noteValues = [];
+    var noteRatios = [];
+    function mapNotes(){
+        noteValues = []
+        noteRatios = []
+        var startTime = performance.now();
+        var windowWidth = window.innerWidth;
+        for (i = 0; i<window.innerWidth*1.765*zoomFactor; i++){
+            xFraction = i/windowWidth;
+            cN = Math.pow(2,(1.713 * xFraction / zoomFactor + 7));
+            noteValues.push(1.04*cN);
+            noteRatios.push((cN/128));
+        }
+        var endTime = performance.now();
+        console.log(`Call to calculate mapNotes took ${endTime - startTime} milliseconds`);
+    }
+
+    mapNotes();
+    onresize = function(e){
+        mapNotes();
+    }
+
+    //plays the note the user wants... also times this
+    xPercent = 0;
+    
+    var freq = document.getElementById("freq");
+
+    //divides the current note ratio by 2 repeatedly to make it within the range 0 to 2
+    function ratioCapped(x){
+        var rC = noteRatios[x];
+        while (rC >= 2){
+            rC = rC/2;
+        }
+        return ((rC-1).toFixed(2));
+    }
+
+    function currentNote(){
+        var e = window.event;
+        var x = e.pageX;
+        freq.innerHTML = ratioCapped(x);
+        freq.classList.remove("hide");
+        freq.setAttribute("style", "left:" + x + "px")
+        return noteValues[x]
+    }
+
+    onmousedown = function(e){
+        if (mouseIsOver){
+            var startTime = performance.now();
+            synth.triggerAttack(currentNote());          
+            notePlaying = true;
+            var endTime = performance.now();
+            console.log(`Call to play note took ${endTime - startTime} milliseconds`);
+    }
+    }
+    onmousemove = function(e){
+        if (mouseIsOver){
+            if (notePlaying){
+                synth.setNote(currentNote());
+            }
+        }
+        else{
+            synth.triggerRelease();
+            notePlaying = false;
+        }
+    }
+
+    onmouseup = function(e){
+        synth.triggerRelease();
+        notePlaying = false;
+        freq.classList.add("hide"); 
+    }
+    
+    
+    
+</script>
+
+</html>
