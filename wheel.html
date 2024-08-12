@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Overlapping Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id = "back"><a class="white" href = "index.html">Back</a></div>
+    <h2>Tone Wheel</h2>
+    <p>A scale is a subset of the cycle of 12 notes from C to B. In particular, scales are considered equivalent if they are rotations of each other--
+      i.e. a major scale where each note is increased by one note is still considered a major scale, just in a different key.
+      Many scales were found to be interesting to musicians, and given particular names.
+      Click on a button to see that scale represented on the chromatic circle. Drag the wheel around to view that scale in different keys. Blacked out 
+      notes are not present in the scale. The yellow note represents the root (initial) note of the scale.  Press the play button to play the scale. 
+    </p>
+    <p> Modes are built off of assigning different root notes to the same underlying scale. On this page, the mode buttons are initially arranged 
+      in chromatic order, from the root being assigned the first note of a scale, to the seventh.
+      Click the "swap" icon with the blue arrows to switch between the chromatic circle,
+      which displays the notes in order, to the circle of fifths, which staggers the notes in a pattern of fifths, swapping every other
+      note on the chromatic circle with its opposite. This will also reorder the mode buttons in the same fashion,
+      incidentally arranging them from "brightest" (most sharps) to "darkest" (most flats) (why does this happen?). 
+      Patterns begin to reveal themselves on the tone wheel -- for instance, we see
+      the major scale consists only of consecutive notes on the circle of fifths. The harmonic minor takes one note from this pattern
+      and moves it several degrees around the circle. The melodic minor takes two. What else can you discover?
+    </p>
+  <h2>Major modes</h2>
+<div class = "container">
+    <button class="scaleButton" onclick="setScale([0,2,4,5,7,9,11])">Ionian</button>
+    <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,10])">Dorian</button>
+    <button class="scaleButton" onclick="setScale([0,1,3,5,7,8,10])">Phrygian</button>
+    <button class="scaleButton" onclick="setScale([0,2,4,6,7,9,11])">Lydian</button>
+    <button class="scaleButton" onclick="setScale([0,2,4,5,7,9,10])">Mixolydian</button>
+    <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,10])">Aeolian</button>
+    <button class="scaleButton" onclick="setScale([0,1,3,5,6,8,10])">Locrian</button>
+</div>
+  <br>
+  <h2>Harmonic minor modes</h2>
+  <div class = "container">
+  <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,11])">Aeolian #7 (Harmonic Minor)</button>
+  <button class="scaleButton" onclick="setScale([0,1,3,5,6,9,10])">Locrian ♮6</button>
+  <button class="scaleButton" onclick="setScale([0,2,4,5,8,9,11])">Ionian #5</button>
+  <button class="scaleButton" onclick="setScale([0,2,3,6,7,9,10])">Dorian #4</button>
+  <button class="scaleButton" onclick="setScale([0,1,4,5,7,8,10])">Phrygian dominant</button>
+  <button class="scaleButton" onclick="setScale([0,3,4,6,7,9,11])">Lydian #2</button>
+  <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,9])">Super Locrian bb7</button>
+</div>
+  <br>
+  <h2>Melodic minor modes</h2>
+  <div class = "container">
+  <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,11])">Dorian #7 (Melodic Minor)</button>
+  <button class="scaleButton" onclick="setScale([0,1,3,5,7,9,10])">Dorian b2</button>
+  <button class="scaleButton" onclick="setScale([0,2,4,6,8,9,11])">Lydian #5</button>
+  <button class="scaleButton" onclick="setScale([0,2,4,6,7,9,10])">Lydian b7</button>
+  <button class="scaleButton" onclick="setScale([0,2,4,5,7,8,10])">Mixolydian b6</button>
+  <button class="scaleButton" onclick="setScale([0,2,3,5,6,8,10])">Half Diminished</button>
+  <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,10])">Altered</button>
+</div>
+<!-- <h2>Pentatonic modes</h2>
+<div class = "container">
+  
+  <button onclick="setScale([0,2,4,7,9])">Ionian</button>
+  <button onclick="setScale([0,2,5,7,9])">Suspended</button>
+  <button onclick="setScale([0,2,5,7,10])">Suspended (with b7)</button>
+  <button onclick="setScale([0,3,5,7,10])">Minor</button>
+  <button onclick="setScale([0,3,5,8,10])">Aeolian</button>
+</div> -->
+  
+  <br>
+  <h2>Other scales</h2>
+  <br>
+  <button class="scaleButton" onclick="setScale([0,2,4,6,8,10])">Whole Tone</button>
+  <button class="scaleButton" onclick="setScale([0,1,3,4,6,7,9,10])">Half-Whole Diminished</button>
+  <button class="scaleButton" onclick="setScale([0,2,3,5,6,8,9,11])">Whole-Half Diminished</button>
+  <button class="scaleButton" onclick="setScale([0,3,5,6,7,10])">Blues</button>
+  <button class="scaleButton" onclick="setScale([0,2,4,7,9])">Pentatonic Major</button>
+  <button class="scaleButton" onclick="setScale([0,3,5,7,10])">Pentatonic Minor</button>
+  <br>
+  <br>
+  <h1 id = "root_text">C</h1>&ensp;&nbsp;<h1 id = "scale_text">Ionian</h1>
+  <button id="playScaleButton">Play Scale</button>
+  <button onclick="toggleFifths()"> <img id = "fifths_icon" src = "fifths_icon.png"></button>
+  <div id="wheel">
+    <img id=circnotes src="circ_semis.png" alt="Circle of Notes">
+    
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image hidden" src="notch.png" alt="notch">
+    <img class="wheel-image" ID=root src="root.png" alt="root">
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.35/Tone.js"></script>
+</body>
+</html>
