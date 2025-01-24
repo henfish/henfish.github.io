@@ -1,0 +1,166 @@
+* {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+    
+}
+html, body{
+    font-family: "Avenir Next","SF Display", "Arial";
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+body {
+    background: rgb(24, 24, 24);
+    color: white;
+
+}
+
+.menu-bar {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.menu-bar .logo {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+
+.menu-bar h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: none;
+    font-size: 40px;
+}
+
+.menu-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar ul li {
+    margin: 0 10px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #333;
+}
+
+.page_content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #0e0e0e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Vertically center the items */
+    align-items: center; /* Horizontally center the items */
+
+}
+
+button{
+    left: 50%;
+    color: white;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: large; 
+    font-family: "Avenir Next","SF Display", "Arial";
+    background-color: rgb(79, 79, 79);
+}
+#piano {
+    display: inline-block;
+    width: 176.5%; /* note: this is just 3/1.7 (its a 3 octave keyboard, and we set it to be  octaves per screen)*/
+    height: 200px;
+    background-color: white;
+    cursor: pointer;
+    /*background-image: linear-gradient(to right, rgb(255, 124, 124) , rgb(255, 255, 135));*/
+    /*background-image: url(Blossom-and-Bird-wallpaper-grey-swatch-syson__22666.jpeg);*/
+}
+table{
+    empty-cells: show;
+    border-collapse: collapse;
+    width:100%;
+}
+#semitone{
+    height: 50%;
+}
+#semitone td:nth-child(12n + 1), #semitone td:nth-child(12n + 3), #semitone td:nth-child(12n + 6),#semitone td:nth-child(12n + 8),#semitone td:nth-child(12n + 10){
+    border: 3px solid rgb(58, 58, 58);
+}
+#semitone td{
+    border: 3px solid rgb(218, 218, 218);
+}
+#semitone td{
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.octave td:nth-child(2n + 1){
+    border: 3px solid rgb(58, 58, 58);
+}
+.octave{
+    height: 50%;
+}
+.octave td{
+    border: 3px solid rgb(218, 218, 218);
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.hide{
+    display:none;
+}
+
+#freq{
+    position:absolute;
+    
+    background-color: #0e0e0e;
+    border:rgb(79, 79, 79);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.white{
+    color: white;
+    background: none;
+}
+.grey{
+    color:grey;
+    background: none;
+}
+
+
+
+.footer{
+    text-align: center;
+    color: grey;
+}
