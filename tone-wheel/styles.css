@@ -6,7 +6,7 @@ body {
     justify-content: center; */
     background-color: #e0e0e0;
     font-family:"Avenir", system-ui;
-    overflow-x: hidden; /* Disable horizontal scrolling */
+    
 }
 
 /* Ensure all child elements stay within the viewport */
@@ -92,9 +92,13 @@ table {
   
   table td {
     display: block;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     margin-bottom: 20px; /* Add spacing between cells */
+  }
+
+  #wheel-td{
+    padding-right:90px /* prevents horizontal overflow */
   }
   
   /* Media query for screens wider than 700px (horizontal layout) */
