@@ -1,0 +1,197 @@
+{
+    "box": {
+        "title": "Box",
+        "video": "https://drive.google.com/file/d/1QQkoauTwL6FfI1LUA54WVNZUzyWxpqW-/preview",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/Shower.html'>Shower [LoJ]</a>"
+    },
+    "box*": {
+        "title": "Box*",
+        "video": "https://drive.google.com/file/d/1P-CGom34uOIsP1M29ALWp-LJ9Y0DZ9OQ/preview",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/Box.html'>Box [LoJ]</a>"
+    },
+    "shuffle": {
+        "title": "Shuffle",
+        "video": "https://drive.google.com/file/d/1wOJyXgSxrC_jsABhySA3D4zv8uQidFEn/preview",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/Shuffle.html'>Shuffle [LoJ]</a>"
+    },
+    "shuffle*": {
+        "title": "Shuffle*",
+        "video": "https://drive.google.com/file/d/1HsNE90zg9wTi1nSC5_wIEALYaI-lhAIP/preview",
+        "images": [],
+        "text": "<a href=https://libraryofjuggling.com/Tricks/3balltricks/Luke'sShuffle.html>Luke's Shuffle [LoJ]</a>"
+    },
+    "reverse-shuffle": {
+        "title": "Reverse-Shuffle",
+        "video": "https://drive.google.com/file/d/1Hai_Rp2ZRzzl9iHD0TpXzHztUvCi3HRa/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle*": {
+        "title": "Reverse-Shuffle*",
+        "video": "https://drive.google.com/file/d/14jB-szzGLYsV_z7TQ4r-TdBubFmKxZ97/preview",
+        "images": [],
+        "text": ""
+    },
+    "inverted-box": {
+        "title": "Inverted-Box",
+        "video": "https://drive.google.com/file/d/1AT8e0AnnDgpAjGsfh1vaEFoS6sYmZs7w/preview",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/LowShuffle.html'>Low Shuffle [LoJ]</a>"
+    },
+    "inverted-box*": {
+        "title": "Inverted-Box*",
+        "video": "https://drive.google.com/file/d/1GHucs2GqkEQ_7GVRZWM4MLCCf3B6m-8i/preview",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/InvertedBox.html'>Inverted Box [LoJ]</a>"
+    },
+    "roll-in": {
+        "title": "Roll-in",
+        "video": "roll-in",
+        "images": [],
+        "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/InvertedBox.html'>Inverted Box [LoJ]</a>"
+    },
+    "roll-in*": {
+        "title": "Roll-in*",
+        "video": "https://drive.google.com/file/d/1iBD_hWSFMALUVf-x7f5fuEzu06CgZcuu/preview",
+        "images": [],
+        "text": "<a href=''>Inverted Box [LoJ]</a>"
+    },
+    "roll-out": {
+        "title": "Roll-out",
+        "video": "roll-out",
+        "images": [],
+        "text": ""
+    },
+    "roll-out*": {
+        "title": "Roll-out*",
+        "video": "https://drive.google.com/file/d/195j_mEZNfubB4f_CfyBYpXsaoRKkpf5B/preview",
+        "images": [],
+        "text": ""
+    },
+    "take-in*": {
+        "title": "Take-in",
+        "video": "https://drive.google.com/file/d/1waoXBgNe9HMaf3Ihwt-6hhZvma3I-Twe/preview",
+        "images": [],
+        "text": ""
+    },
+    "take-out*": {
+        "title": "Take-out*",
+        "video": "https://drive.google.com/file/d/13B2-X-1NSAOcFZ1owvjkVtJssYkA8-hQ/preview",
+        "images": [],
+        "text": ""
+    },
+    "box_roll-out*": {
+        "title": "Box Roll-out*",
+        "video": "https://drive.google.com/file/d/1lkDEGGDHiBrG8yDAw18KKUvyY2pDt1-i/preview",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_roll-out*": {
+        "title": "Shuffle Roll-out*",
+        "video": "https://drive.google.com/file/d/1hJVw8XdaKmU5gC1ZglNLOIhbuGxKxlVV/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle_roll-out*": {
+        "title": "Reverse-Shuffle Roll-out*",
+        "video": "https://drive.google.com/file/d/11OZGvkpeyuHfRDDfnCxnNtzoR8eAKk_a/preview",
+        "images": [],
+        "text": ""
+    },
+    "inverted-box_roll-out*": {
+        "title": "Inverted-Box Roll-out*",
+        "video": "https://drive.google.com/file/d/1tFp0BmDs_Yg_17u8iuS8snmSB4-jw_7Y/preview",
+        "images": [],
+        "text": ""
+    },
+    "box_roll-in*": {
+        "title": "Box Roll-in*",
+        "video": "https://drive.google.com/file/d/1eKorkECwOlzJFO8no0WTa0fcvprK8WE-/preview",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_roll-in*": {
+        "title": "Shuffle Roll-in*",
+        "video": "shuffle_roll-in*",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle_roll-in*": {
+        "title": "Reverse-Shuffle Roll-in*",
+        "video": "https://drive.google.com/file/d/1qMt6CJ_6kkTyIUFjgiCha9QYn6zyRJ8r/preview",
+        "images": [],
+        "text": ""
+    },
+    "inverted-box_roll-in*": {
+        "title": "Inverted-Box Roll-in*",
+        "video": "https://drive.google.com/file/d/1g6lLURZlWeYGwdO1rUlAcUR6LtLqOxYB/preview",
+        "images": [],
+        "text": ""
+    },
+    "box_take-in*": {
+        "title": "Box Take-in*",
+        "video": "https://drive.google.com/file/d/1ghvNXxQJ20_7qda9JoYXDlFfq5f4_gAg/preview",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_take-in*": {
+        "title": "Shuffle Take-in*",
+        "video": "https://drive.google.com/file/d/1wY60SRJCtK-68ma10ycwHCYjhYEJ4lr1/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle_take-in*": {
+        "title": "Reverse-Shuffle Take-in*",
+        "video": "https://drive.google.com/file/d/1LMrDp7603FHDMaY0HBgVDYkhjDkQIYph/preview",
+        "images": [],
+        "text": ""
+    },
+    "inverted-box_take-in*": {
+        "title": "Inverted-Box Take-in*",
+        "video": "https://drive.google.com/file/d/1MdiawQDFxL6r_rJXuxjInxvyEdSBmijo/preview",
+        "images": [],
+        "text": ""
+    },
+    "box_take-out*": {
+        "title": "Box Take-out*",
+        "video": "https://drive.google.com/file/d/1PDE_heR6r97cVztn1VfyB31jqTgiNOb4/preview",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_take-out*": {
+        "title": "Shuffle Take-out*",
+        "video": "https://drive.google.com/file/d/1FM0Ih3I_LtD7OIWHBtV7P4ivBWLkyVEB/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle*_take-in": {
+        "title": "Reverse-Shuffle* Take-in",
+        "video": "https://drive.google.com/file/d/1_HI8BgJGcvNeRQ0qABnLSVnwxcPEi2vR/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle*_take-out": {
+        "title": "Reverse-Shuffle* Take-out",
+        "video": "https://drive.google.com/file/d/1mvblw73sQmAOtG93bdFzGgZ9f0yjVVzu/preview",
+        "images": [],
+        "text": ""
+    },
+    "returning-box_turning-box*": {
+        "title": "Returning-Box Turning-Box*",
+        "video": "https://drive.google.com/file/d/1NXUhWxuRQlP3dnqr6sp85-E3bYrB3X6V/preview",
+        "images": [],
+        "text": ""
+    },
+    "older videos": {
+        "video": "https://drive.google.com/file/d/1UIpEXi8LR8NBDZJTwLH1UfLYkFG6e84_/preview"
+    },
+    "crosses*": {
+        "video": "https://drive.google.com/file/d/1fFPsxH-jKZ-HuEZg3YjEko07Fli0ZDkb/preview"
+    },
+    "shuffle_roll-in": {
+        "video": "https://drive.google.com/file/d/1gEhoABBfE3qpI9MPI4QL0Y74cUe_7Sg3/preview"
+    }
+}

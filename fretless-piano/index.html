@@ -24,8 +24,12 @@
             -moz-user-select: none;
             -o-user-select: none;
             user-select: none;
-            height:100%;
             text-align: center;
+            overflow-x: hidden; /* Disable horizontal scroll */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
             
         }
         body {
@@ -50,8 +54,9 @@
         #piano {
             display: inline-block;
             width: 176.5%; /* note: this is just 3/1.7 (its a 3 octave keyboard, and we set it to be  octaves per screen)*/
-            height: 87%;
+            height: 200px;
             background-color: white;
+            cursor: pointer;
             /*background-image: linear-gradient(to right, rgb(255, 124, 124) , rgb(255, 255, 135));*/
             /*background-image: url(Blossom-and-Bird-wallpaper-grey-swatch-syson__22666.jpeg);*/
         }
@@ -61,8 +66,7 @@
             width:100%;
         }
         #semitone{
-            
-            height: 3%;
+            height: 50%;
         }
         #semitone td:nth-child(12n + 1), #semitone td:nth-child(12n + 3), #semitone td:nth-child(12n + 6),#semitone td:nth-child(12n + 8),#semitone td:nth-child(12n + 10){
             border: 3px solid rgb(58, 58, 58);
@@ -71,7 +75,6 @@
             border: 3px solid rgb(218, 218, 218);
         }
         #semitone td{
-            
             border-bottom: none !important;
             border-top: none !important;
         }
@@ -80,7 +83,7 @@
             border: 3px solid rgb(58, 58, 58);
         }
         .octave{
-            height: 100%;
+            height: 50%;
         }
         .octave td{
             border: 3px solid rgb(218, 218, 218);
@@ -94,7 +97,7 @@
 
         #freq{
             position:absolute;
-            top: 17%;
+            
             background-color:rgb(79, 79, 79);
             border:rgb(79, 79, 79);
             border-radius: 5px;
@@ -112,14 +115,6 @@
             color:grey;
             background: none;
         }
-        #back{
-            position:fixed;
-            left: 0%;
-            top: 0%;
-            padding: 1%;
-            
-            
-        }
         
         
     </style>
@@ -130,7 +125,7 @@
     <!--<div id = container>
         <canvas height="40" width="310"></canvas>
         </div>-->
-    <div id = "back"><a class="white" href = "index.html">Back</a></div>
+    <!-- <div id = "back"><a class="white" href = "index.html">Back</a></div> -->
     <h1 class = "header">
         <mark class="white">F</mark><mark class="grey">r</mark><mark class="white">e</mark><mark class="grey">t</mark><mark class="white">le</mark><mark class="grey">s</mark><mark class="white">s</mark>
         <mark class="grey">P</mark><mark class="white">i</mark><mark class="grey">a</mark><mark class="white">no</mark>
@@ -138,7 +133,7 @@
 
 
     <h2 class = "header">By Henry Fisher</h2>
-    <p class = "header"> A piano has a repeating pattern of 12 keys: 5 black and 7 white. 
+    <!-- <p class = "header"> A piano has a repeating pattern of 12 keys: 5 black and 7 white. 
         Those keys are represented by the black and grey "frets" at the top of the white strip. But what 
         would happen if we could play in between the keys?</p>
     <p class = "header"> Although the notes on the piano are physically equally spaced,
@@ -146,8 +141,8 @@
         <p class = "header">  Click <b>"enable audio"</b>  and then click on the white strip to play a note. 
             The number hovering above where you click is the frequency ratio (in hz) to the closest C below your note. 
          The vertical lines are guidelines: the grey lines represent octaves above C (a 2:1 ratio) and the black lines represent 
-         tritones above C (a 1.41:1 ratio, or exactly half of an octave). <p>
-    <button id = "start">Enable Audio</button>  <button id = "grid">Grid</button>
+         tritones above C (a 1.41:1 ratio, or exactly half of an octave). <p> -->
+    <!-- <button id = "start">Enable Audio</button> -->
     <p id="demo">Zoom : 1</p>
     <div class="slidecontainer">
         <input type="range" min="0.57" max="4" value="1" step ="0.01" class="slider" id="zoom">
@@ -177,21 +172,21 @@
     
     
     //checks if audio is ready
-    document.getElementById("start").addEventListener('click', async () => {
-        await Tone.start()
-        console.log('audio is ready')
-    })
+    // document.getElementById("start").addEventListener('click', async () => {
+    //     await Tone.start()
+    //     console.log('audio is ready')
+    // })
 
     //hides the semitone markers on the click of a button
     semitoneTable = document.getElementById("semitone")
-    document.getElementById("grid").addEventListener('click', async () => {
-        if (semitoneTable.classList.contains("hide")){
-            semitoneTable.classList.remove("hide");
-        }
-        else{
-            semitoneTable.classList.add("hide");
-        }
-    })
+    // document.getElementById("grid").addEventListener('click', async () => {
+    //     if (semitoneTable.classList.contains("hide")){
+    //         semitoneTable.classList.remove("hide");
+    //     }
+    //     else{
+    //         semitoneTable.classList.add("hide");
+    //     }
+    // })
 
     const piano = document.getElementById("piano");
     
@@ -267,9 +262,11 @@
     function currentNote(){
         var e = window.event;
         var x = e.pageX;
+        var y = e.pageY;
         freq.innerHTML = ratioCapped(x);
         freq.classList.remove("hide");
-        freq.setAttribute("style", "left:" + x + "px")
+        freq.style.left = x + "px";
+        freq.style.top = (y+10) + "px";
         return noteValues[x]
     }
 
