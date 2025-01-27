@@ -26,6 +26,7 @@ let notes = [0];
 let scale_degree = 0;
 currentNote = 0;
 
+
 if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     // Redirect to the unsupported page
     window.location.href = "unsupported.html";
