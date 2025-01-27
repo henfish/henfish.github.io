@@ -8,6 +8,9 @@ const wheelImages = document.querySelectorAll('.wheel-image');
 const root_text = document.getElementById('root_text');
 const scale_text = document.getElementById('scale_text');
 const notches_to_radians = 2*Math.PI / 12;
+const chromatic_order_lists = document.querySelectorAll('.order-chromatic')
+const fifths_order_lists = document.querySelectorAll('.order-fifths')
+const fifths_indicator = document.getElementById('fifths_indicator')
 let isDragging = false;
 let initialAngle = 0;
 let startAngle = 0;
@@ -105,9 +108,7 @@ document.addEventListener('mousemove', (e) => {
 
 function setScale(notes, deg){
     // Determine which of the twelve notes in the wheel should be showing, and hides those notches accordingly
-
 	current_scale = notes;
-    
 	for (const note of twelve_arr){
 		if (notes.includes(note)){
 			wheelImages[note].classList.add('hidden');
@@ -138,41 +139,46 @@ function toggleFifths(){
     if (fifths == 1){
         fifths = 0;
         circ.src = "circ_semis.png";
+        chromatic_order_lists.forEach(element => {element.classList.remove('hidden');});
+        fifths_order_lists.forEach(element => {element.classList.add('hidden');});
+        fifths_indicator.innerHTML = "Chromatic Circle"
     } else {
         fifths = 1;
         circ.src = "circ_fifths.png";
+        chromatic_order_lists.forEach(element => {element.classList.add('hidden');});
+        fifths_order_lists.forEach(element => {element.classList.remove('hidden');});
+        fifths_indicator.innerHTML = "Circle of Fifths"
     };
     offset = (offset + isOdd)%2
     rotateNotches();
 	setScale(current_scale);
-    console.log("hello")
     // Rearrange the order of the scales
 
-    // Get all containers with the class "container"
-    const containers = document.querySelectorAll('.container');
+    // // Get all containers with the class "container"
+    // const containers = document.querySelectorAll('.container');
     
-    // Specify the desired order of indices (1-based)
-    let order = [];
-    if (fifths == 0){
-        order = [2, 4, 6, 1, 3, 5, 7];}
-    else{
-        order = [4, 1, 5, 2, 6, 3, 7];
-    }
+    // // Specify the desired order of indices (1-based)
+    // let order = [];
+    // if (fifths == 0){
+    //     order = [2, 4, 6, 1, 3, 5, 7];}
+    // else{
+    //     order = [4, 1, 5, 2, 6, 3, 7];
+    // }
     
-    // Loop through each container and rearrange its elements
-    containers.forEach(container => {
-        const elements = Array.from(container.children);
+    // // Loop through each container and rearrange its elements
+    // containers.forEach(container => {
+    //     const elements = Array.from(container.children);
         
-        // Create a new array to store elements in the desired order
-        const rearrangedElements = order.map(index => elements[index - 1]);
+    //     // Create a new array to store elements in the desired order
+    //     const rearrangedElements = order.map(index => elements[index - 1]);
 
-        // Clear the container and re-append the elements in the new order
-        container.innerHTML = '';
-        rearrangedElements.forEach(element => {
-            container.appendChild(element);
-        });
-    });
-}
+    //     // Clear the container and re-append the elements in the new order
+    //     container.innerHTML = '';
+    //     rearrangedElements.forEach(element => {
+    //         container.appendChild(element);
+    //     });
+    };
+
 
 
 // Function to play a major scale

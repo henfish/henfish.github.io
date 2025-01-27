@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotating Overlapping Images</title>
+  <title>Tone Wheel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -23,7 +23,7 @@
     <tr>
       <td>
         <h2>Major modes</h2>
-        <div class="container">
+        <div class="order-chromatic">
           <button class="scaleButton" onclick="setScale([0,2,4,5,7,9,11])">Ionian</button>
           <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,10])">Dorian</button>
           <button class="scaleButton" onclick="setScale([0,1,3,5,7,8,10])">Phrygian</button>
@@ -32,9 +32,19 @@
           <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,10])">Aeolian</button>
           <button class="scaleButton" onclick="setScale([0,1,3,5,6,8,10])">Locrian</button>
         </div>
+        <div class="order-fifths hidden">
+          <button class="scaleButton" onclick="setScale([0,2,4,6,7,9,11])">Lydian</button>
+          <button class="scaleButton" onclick="setScale([0,2,4,5,7,9,11])">Ionian</button>
+          <button class="scaleButton" onclick="setScale([0,2,4,5,7,9,10])">Mixolydian</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,10])">Dorian</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,10])">Aeolian</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,5,7,8,10])">Phrygian</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,5,6,8,10])">Locrian</button>
+        </div>
+        
         <br>
         <h2>Harmonic minor modes</h2>
-        <div class="container">
+        <div class="order-chromatic">
           <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,11])">Aeolian #7 (Harmonic Minor)</button>
           <button class="scaleButton" onclick="setScale([0,1,3,5,6,9,10])">Locrian ♮6</button>
           <button class="scaleButton" onclick="setScale([0,2,4,5,8,9,11])">Ionian #5</button>
@@ -43,16 +53,34 @@
           <button class="scaleButton" onclick="setScale([0,3,4,6,7,9,11])">Lydian #2</button>
           <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,9])">Super Locrian bb7</button>
         </div>
+        <div class="order-fifths hidden">
+          <button class="scaleButton" onclick="setScale([0,3,4,6,7,9,11])">Lydian #2</button>
+          <button class="scaleButton" onclick="setScale([0,2,4,5,8,9,11])">Ionian #5</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,6,7,9,10])">Dorian #4</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,7,8,11])">Aeolian #7 (Harmonic Minor)</button>
+          <button class="scaleButton" onclick="setScale([0,1,4,5,7,8,10])">Phrygian dominant</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,5,6,9,10])">Locrian ♮6</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,9])">Super Locrian bb7</button>
+        </div>
         <br>
         <h2>Melodic minor modes</h2>
-        <div class="container">
+        <div class="order-chromatic">
           <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,11])">Dorian #7 (Melodic Minor)</button>
           <button class="scaleButton" onclick="setScale([0,1,3,5,7,9,10])">Dorian b2</button>
           <button class="scaleButton" onclick="setScale([0,2,4,6,8,9,11])">Lydian #5</button>
           <button class="scaleButton" onclick="setScale([0,2,4,6,7,9,10])">Lydian b7</button>
           <button class="scaleButton" onclick="setScale([0,2,4,5,7,8,10])">Mixolydian b6</button>
-          <button class="scaleButton" onclick="setScale([0,2,3,5,6,8,10])">Half Diminished</button>
-          <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,10])">Altered</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,6,8,10])">Locrian #2</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,10])">Super Locrian (Altered)</button>
+        </div>
+        <div class="order-fifths hidden">
+          <button class="scaleButton" onclick="setScale([0,2,4,6,8,9,11])">Lydian #5</button>
+          <button class="scaleButton" onclick="setScale([0,2,4,6,7,9,10])">Lydian b7</button>
+          <button class="scaleButton" onclick="setScale([0,2,4,5,7,8,10])">Mixolydian b6</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,7,9,11])">Dorian #7 (Melodic Minor)</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,5,7,9,10])">Dorian b2</button>
+          <button class="scaleButton" onclick="setScale([0,2,3,5,6,8,10])">Locrian #2</button>
+          <button class="scaleButton" onclick="setScale([0,1,3,4,6,8,10])">Super Locrian (Altered)</button>
         </div>
         <!-- <h2>Pentatonic modes</h2>
       <div class = "container">
@@ -81,7 +109,7 @@
         <button id="playScaleButton">Play Scale</button>
         <button onclick="toggleFifths()"> <img id="fifths_icon" src="fifths_icon.png"></button>
         <br>
-        <br>
+        <p id="fifths_indicator">Chromatic Circle</p>
         <div id="wheel">
           <img id=circnotes src="circ_semis.png" alt="Circle of Notes">
 
