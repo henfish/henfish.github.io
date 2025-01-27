@@ -166,7 +166,7 @@ async function playScale() {
     const duration = "8n"; // Duration of each note (eighth note)
 
     // Convert scaleArray to note names based on rootNote
-    fullScale = current_scale.concat(12)
+    fullScale = current_scale.concat(12).concat(current_scale.slice().reverse());
     const notes = fullScale.map(semitoneOffset => {
         const noteIndex = rootKey + semitoneOffset;
         return Tone.Frequency(noteIndex, "midi").toNote(); // Convert MIDI index to note name
