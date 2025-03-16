@@ -48,150 +48,295 @@
         "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/InvertedBox.html'>Inverted Box [LoJ]</a>"
     },
     "roll-in": {
-        "title": "Roll-in",
-        "video": "roll-in",
+        "title": "Roll-In",
+        "video": "https://drive.google.com/file/d/1jK_KISr52RT5gi6e0211DnW-Q1OMNSwI/preview",
         "images": [],
         "text": "<a href='https://libraryofjuggling.com/Tricks/3balltricks/InvertedBox.html'>Inverted Box [LoJ]</a>"
     },
     "roll-in*": {
-        "title": "Roll-in*",
+        "title": "Roll-In*",
         "video": "https://drive.google.com/file/d/1iBD_hWSFMALUVf-x7f5fuEzu06CgZcuu/preview",
         "images": [],
         "text": "<a href=''>Inverted Box [LoJ]</a>"
     },
     "roll-out": {
-        "title": "Roll-out",
-        "video": "roll-out",
+        "title": "Roll-Out",
+        "video": "https://drive.google.com/file/d/1yarDe6j6UjYwEj64F5fjm83Awzm9nz7-/preview",
         "images": [],
         "text": ""
     },
     "roll-out*": {
-        "title": "Roll-out*",
+        "title": "Roll-Out*",
         "video": "https://drive.google.com/file/d/195j_mEZNfubB4f_CfyBYpXsaoRKkpf5B/preview",
         "images": [],
         "text": ""
     },
     "take-in*": {
-        "title": "Take-in",
+        "title": "Take-In*",
         "video": "https://drive.google.com/file/d/1waoXBgNe9HMaf3Ihwt-6hhZvma3I-Twe/preview",
         "images": [],
         "text": ""
     },
     "take-out*": {
-        "title": "Take-out*",
+        "title": "Take-Out*",
         "video": "https://drive.google.com/file/d/13B2-X-1NSAOcFZ1owvjkVtJssYkA8-hQ/preview",
         "images": [],
         "text": ""
     },
     "box_roll-out*": {
-        "title": "Box Roll-out*",
+        "title": "Box Roll-Out*",
         "video": "https://drive.google.com/file/d/1lkDEGGDHiBrG8yDAw18KKUvyY2pDt1-i/preview",
         "images": [],
         "text": ""
     },
     "shuffle_roll-out*": {
-        "title": "Shuffle Roll-out*",
+        "title": "Shuffle Roll-Out*",
         "video": "https://drive.google.com/file/d/1hJVw8XdaKmU5gC1ZglNLOIhbuGxKxlVV/preview",
         "images": [],
         "text": ""
     },
     "reverse-shuffle_roll-out*": {
-        "title": "Reverse-Shuffle Roll-out*",
+        "title": "Reverse-Shuffle Roll-Out*",
         "video": "https://drive.google.com/file/d/11OZGvkpeyuHfRDDfnCxnNtzoR8eAKk_a/preview",
         "images": [],
         "text": ""
     },
     "inverted-box_roll-out*": {
-        "title": "Inverted-Box Roll-out*",
+        "title": "Inverted-Box Roll-Out*",
         "video": "https://drive.google.com/file/d/1tFp0BmDs_Yg_17u8iuS8snmSB4-jw_7Y/preview",
         "images": [],
         "text": ""
     },
     "box_roll-in*": {
-        "title": "Box Roll-in*",
+        "title": "Box Roll-In*",
         "video": "https://drive.google.com/file/d/1eKorkECwOlzJFO8no0WTa0fcvprK8WE-/preview",
         "images": [],
         "text": ""
     },
     "shuffle_roll-in*": {
         "title": "Shuffle Roll-in*",
-        "video": "shuffle_roll-in*",
-        "images": [],
-        "text": ""
+        "video": "shuffle_roll-in*"
     },
     "reverse-shuffle_roll-in*": {
-        "title": "Reverse-Shuffle Roll-in*",
+        "title": "Reverse-Shuffle Roll-In*",
         "video": "https://drive.google.com/file/d/1qMt6CJ_6kkTyIUFjgiCha9QYn6zyRJ8r/preview",
         "images": [],
         "text": ""
     },
     "inverted-box_roll-in*": {
-        "title": "Inverted-Box Roll-in*",
+        "title": "Inverted-Box Roll-In*",
         "video": "https://drive.google.com/file/d/1g6lLURZlWeYGwdO1rUlAcUR6LtLqOxYB/preview",
         "images": [],
         "text": ""
     },
     "box_take-in*": {
-        "title": "Box Take-in*",
+        "title": "Box Take-In*",
         "video": "https://drive.google.com/file/d/1ghvNXxQJ20_7qda9JoYXDlFfq5f4_gAg/preview",
         "images": [],
         "text": ""
     },
     "shuffle_take-in*": {
-        "title": "Shuffle Take-in*",
+        "title": "Shuffle Take-In*",
         "video": "https://drive.google.com/file/d/1wY60SRJCtK-68ma10ycwHCYjhYEJ4lr1/preview",
         "images": [],
         "text": ""
     },
     "reverse-shuffle_take-in*": {
-        "title": "Reverse-Shuffle Take-in*",
+        "title": "Reverse-Shuffle Take-In*",
         "video": "https://drive.google.com/file/d/1LMrDp7603FHDMaY0HBgVDYkhjDkQIYph/preview",
         "images": [],
         "text": ""
     },
     "inverted-box_take-in*": {
-        "title": "Inverted-Box Take-in*",
+        "title": "Inverted-Box Take-In*",
         "video": "https://drive.google.com/file/d/1MdiawQDFxL6r_rJXuxjInxvyEdSBmijo/preview",
         "images": [],
         "text": ""
     },
     "box_take-out*": {
-        "title": "Box Take-out*",
+        "title": "Box Take-Out*",
         "video": "https://drive.google.com/file/d/1PDE_heR6r97cVztn1VfyB31jqTgiNOb4/preview",
         "images": [],
         "text": ""
     },
     "shuffle_take-out*": {
-        "title": "Shuffle Take-out*",
+        "title": "Shuffle Take-Out*",
         "video": "https://drive.google.com/file/d/1FM0Ih3I_LtD7OIWHBtV7P4ivBWLkyVEB/preview",
         "images": [],
         "text": ""
     },
     "reverse-shuffle*_take-in": {
-        "title": "Reverse-Shuffle* Take-in",
+        "title": "Reverse-Shuffle* Take-In",
         "video": "https://drive.google.com/file/d/1_HI8BgJGcvNeRQ0qABnLSVnwxcPEi2vR/preview",
         "images": [],
         "text": ""
     },
     "reverse-shuffle*_take-out": {
-        "title": "Reverse-Shuffle* Take-out",
+        "title": "Reverse-Shuffle* Take-Out",
         "video": "https://drive.google.com/file/d/1mvblw73sQmAOtG93bdFzGgZ9f0yjVVzu/preview",
         "images": [],
         "text": ""
     },
-    "returning-box_turning-box*": {
-        "title": "Returning-Box Turning-Box*",
+    "reverse-under-arm-box_under-arm-box*": {
+        "title": "Reverse-Under-Arm-Box Under-Arm-Box*",
+        "video": "https://drive.google.com/file/d/12voT4S1Ql-nXvqqKddPCrmQ5lvNI_jQw/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-under-arm-inverted-box_under-arm-inverted-box*": {
+        "title": "Reverse-Under-Arm-Inverted-Box Under-Arm-Inverted-Box*",
         "video": "https://drive.google.com/file/d/1NXUhWxuRQlP3dnqr6sp85-E3bYrB3X6V/preview",
         "images": [],
         "text": ""
     },
     "older videos": {
-        "video": "https://drive.google.com/file/d/1UIpEXi8LR8NBDZJTwLH1UfLYkFG6e84_/preview"
+        "video": "https://drive.google.com/file/d/1UIpEXi8LR8NBDZJTwLH1UfLYkFG6e84_/preview",
+        "title": "Older Videos"
     },
     "crosses*": {
-        "video": "https://drive.google.com/file/d/1fFPsxH-jKZ-HuEZg3YjEko07Fli0ZDkb/preview"
+        "video": "https://drive.google.com/file/d/1fFPsxH-jKZ-HuEZg3YjEko07Fli0ZDkb/preview",
+        "title": "Crosses*"
     },
     "shuffle_roll-in": {
-        "video": "https://drive.google.com/file/d/1gEhoABBfE3qpI9MPI4QL0Y74cUe_7Sg3/preview"
+        "video": "https://drive.google.com/file/d/1gEhoABBfE3qpI9MPI4QL0Y74cUe_7Sg3/preview",
+        "title": "Shuffle Roll-In"
+    },
+    "reverse-under-arm-box_box*": {
+        "title": "Reverse-Under-Arm-Box Box*",
+        "video": "https://drive.google.com/file/d/1oijdtNQZ1f5FHW1gwRgFmfPgnHxOfspy/preview",
+        "images": [],
+        "text": ""
+    },
+    "reverse-under-arm-box*": {
+        "video": "https://drive.google.com/file/d/1viIYM9NSUUqLlPbPTsRVapxttrZZE3mb/preview",
+        "title": "Reverse-Under-Arm-Box*",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-box*": {
+        "video": "https://drive.google.com/file/d/1YjoNjbKNp_5xOvi3blrL7o-q5QFtMQz8/preview",
+        "title": "Under-Arm-Box*",
+        "images": [],
+        "text": ""
+    },
+    "box_inverted-box*": {
+        "video": "https://drive.google.com/file/d/1nyOoCvcgXdb4YtRKUQuLhg6RXytYjmg_/preview",
+        "title": "Box Inverted-Box*",
+        "images": [],
+        "text": ""
+    },
+    "box_reverse-shuffle*": {
+        "video": "https://drive.google.com/file/d/1FGl6jnR9n4MwWr8gnz4P_nSVo8asFeLi/preview",
+        "title": "Box Reverse-Shuffle*",
+        "images": [],
+        "text": ""
+    },
+    "box_under-arm-claw-box*": {
+        "video": "https://drive.google.com/file/d/1uREsLkN1HgYCOZwNkPF6i3bsDEMeAaV8/preview",
+        "title": "Box Under-Arm-Claw-Box*",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_box*": {
+        "video": "https://drive.google.com/file/d/1k8ZNuu8OYlZ3EGWo20zfLpYfo2gL-pFT/preview",
+        "title": "Shuffle Box*",
+        "images": [],
+        "text": ""
+    },
+    "box_shuffle*": {
+        "video": "https://drive.google.com/file/d/1TcAeiX32pP958ySDkzwc_jM6e-k58ZWA/preview",
+        "title": "Box Shuffle*",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-claw-box_under-arm-claw-box*": {
+        "video": "https://drive.google.com/file/d/11N0s9rDO9RxqP-hzdHYDswdOpptV-Y-D/preview",
+        "title": "Under-Arm-Claw-Box Under-Arm-Claw-Box*",
+        "images": [],
+        "text": ""
+    },
+    "shuffle*_roll-in": {
+        "video": "https://drive.google.com/file/d/1f3DWrl99YKzEmJYJHN1W5JeWegDg9LCq/preview",
+        "title": "Shuffle* Roll-In",
+        "images": [],
+        "text": ""
+    },
+    "box*_roll-in": {
+        "video": "https://drive.google.com/file/d/10OweASQ0d3ceTZg_9Wp2N65g-G6opbsh/preview",
+        "title": "Box* Roll-In",
+        "images": [],
+        "text": ""
+    },
+    "shuffle*_roll-out": {
+        "video": "https://drive.google.com/file/d/1vcb6enOUF54zObSZDCoaYA-nsHGVW50h/preview",
+        "title": "Shuffle* Roll-Out",
+        "images": [],
+        "text": ""
+    },
+    "box*_roll-out": {
+        "video": "https://drive.google.com/file/d/1KL4jV85HFze2tyuzQ-a8bIpDZjukawnJ/preview",
+        "title": "Box* Roll-Out",
+        "images": [],
+        "text": ""
+    },
+    "inverted-box_inverted-box*": {
+        "video": "https://drive.google.com/file/d/1WcHGgOIbzHyODSXHCRCEHQTnZOLUE2Jy/preview",
+        "title": "Inverted-Box Inverted-Box*",
+        "images": [],
+        "text": ""
+    },
+    "reverse-shuffle_reverse-shuffle*": {
+        "video": "https://drive.google.com/file/d/1E872nmikyPEpUJZEqiPVUZ4L-x9SY1Cg/preview",
+        "title": "Reverse-Shuffle Reverse-Shuffle*",
+        "images": [],
+        "text": ""
+    },
+    "shuffle_shuffle*": {
+        "video": "https://drive.google.com/file/d/1VBXkgpaYcIcitbSWYPokPwWf5FEly-EA/preview",
+        "title": "Shuffle Shuffle*",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-box_under-arm-claw-box*": {
+        "video": "https://drive.google.com/file/d/18g2nOLdf2TYWfc_UDHRaPH_2djyJvUpu/preview",
+        "title": "Under-Arm-Box Under-Arm-Claw-Box*",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-claw-box": {
+        "video": "https://drive.google.com/file/d/1MZ-iXCCSqVAP8dz4ZiHwP5a8wTLuqb5y/preview",
+        "title": "Under-Arm-Claw-Box",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-claw-box*": {
+        "video": "https://drive.google.com/file/d/1pK_2ki0ngCj-TW_DSiix4Oc0dS3_qnt1/preview",
+        "title": "Under-Arm-Claw-Box*",
+        "images": [],
+        "text": ""
+    },
+    "box_box*": {
+        "video": "https://drive.google.com/file/d/1I8rTL4FsXcTwFMttc4Htcp2YqtVWezDP/preview",
+        "title": "Box Box*",
+        "images": [],
+        "text": ""
+    },
+    "under-arm-box": {
+        "video": "https://drive.google.com/file/d/1S2Nknk3AA6tvbkPLOeuC1cAGGiKgNuUY/preview",
+        "title": "Under-Arm-Box",
+        "images": [],
+        "text": ""
+    },
+    "reverse-under-arm-inverted-box": {
+        "video": "https://drive.google.com/file/d/1qwWwuu752Xu7LM9PIm3TQY30TiAdzqkK/preview",
+        "title": "Reverse-Under-Arm-Inverted-Box",
+        "images": [],
+        "text": ""
+    },
+    "reverse-under-arm-inverted-box*": {
+        "video": "https://drive.google.com/file/d/1naqpwTQvu4FP5mUSZ5ZQrK8acXllQBuJ/preview",
+        "title": "Reverse-Under-Arm-Inverted-Box*",
+        "images": [],
+        "text": ""
     }
 }
